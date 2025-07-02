@@ -1,38 +1,160 @@
-.App {
+/* === Background === */
+body {
+  background: rgb(54, 17, 203);
+  background: linear-gradient(90deg, rgba(54, 17, 203, 1) 16%, rgba(14, 180, 223, 1) 68%, rgba(77, 208, 0, 1) 97%);
+}
+
+/* === Headings === */
+h1 {
+  text-align: center;
+  font-size: 48px;
+  box-shadow: 4px 8px 10px rgb(12, 12, 12);
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  box-shadow: 4px 8px 10px rgb(12, 12, 12);
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* === Header Styles === */
+header,
+.header2 {
+  border: 10px double rgb(12, 12, 12);
+  text-align: center;
+  box-shadow: 4px 8px 10px rgb(35, 21, 87);
+  margin-bottom: 15px;
+  color: rgb(226, 201, 204);
+  text-shadow: 2px 2px rgb(12, 12, 12);
+}
+
+.header2 {
+  margin-top: 15px;
+}
+
+/* === Navbar === */
+.navbar {
+  border: 10px double rgb(12, 12, 12);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-bottom: 15px;
+  box-shadow: 4px 8px 10px rgb(35, 21, 87);
+  height: auto;
+}
+
+/* === Dropdown === */
+.dropdown {
+  border: 10px double rgb(12, 12, 12);
+  margin: 10px;
+  background-color: rgba(35, 21, 87, 0.5);
+  border-radius: 50px;
+  box-shadow: 4px 8px 10px rgb(0, 0, 255);
+  cursor: pointer;
+}
+
+.dropdown:hover {
+  background-color: rgb(255, 136, 0);
+}
+
+.dropdown-menu {
+  background: transparent;
+}
+
+.dropdown-menu:hover {
+  background: transparent;
+}
+
+/* === Box === */
+.box {
+  border: 2px solid rgb(12, 12, 12);
+  display: inline-block;
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+  box-shadow: 4px 8px 10px rgb(35, 21, 87);
+  border-radius: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* === Color Boxes === */
+.red { background-color: rgb(173, 10, 4); color: rgb(12, 12, 12); margin-top: 10px; }
+.redorange { background-color: rgb(255, 0, 0); color: rgb(12, 12, 12); }
+.orange { background-color: rgb(255, 136, 0); color: rgb(12, 12, 12); }
+.orangeyellow { background-color: rgb(255, 176, 7); color: rgb(12, 12, 12); }
+.yellow { background-color: rgb(255, 255, 0); color: rgb(12, 12, 12); }
+.yellowgreen { background-color: rgb(173, 255, 47); color: rgb(12, 12, 12); margin-top: 10px; }
+.green { background-color: rgb(2, 109, 2); color: rgb(12, 12, 12); }
+.greenblue { background-color: rgb(65, 192, 181); color: rgb(12, 12, 12); }
+.blue { background-color: rgb(0, 0, 255); color: rgb(255, 255, 255); }
+.bluepurple { background-color: rgb(106, 17, 203); color: rgb(255, 255, 255); }
+.purple { background-color: rgb(39, 10, 39); color: rgb(255, 255, 255); margin-top: 10px; }
+.pink { background-color: rgb(255, 192, 203); color: rgb(12, 12, 12); }
+.white { background-color: rgb(255, 255, 255); color: rgb(12, 12, 12); }
+.grey { background-color: rgb(128, 128, 128); color: rgb(255, 255, 255); }
+.ash { background-color: rgba(12, 12, 12, 0.3); color: rgb(255, 255, 255); }
+.black { background-color: rgb(12, 12, 12); color: rgb(255, 255, 255); margin-top: 10px; }
+.brown { background-color: rgb(58, 53, 11); color: rgb(255, 255, 255); }
+
+/* === Rainbow Gradients === */
+.rainbow {
+  background-image: linear-gradient(to top, rgb(79, 181, 118) 0%, rgb(68, 196, 137) 30%, rgb(40, 169, 174) 46%, rgb(40, 162, 183) 59%, rgb(76, 119, 136) 71%, rgb(108, 79, 99) 86%, rgb(67, 44, 57) 100%);
+  color: rgb(255, 255, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rainbow2 {
+  background-image: linear-gradient(-225deg, rgb(35, 21, 87) 0%, rgb(68, 16, 122) 29%, rgb(255, 19, 97) 67%, rgb(255, 248, 0) 100%);
+  color: rgb(255, 255, 255);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.rainbow3 {
+  background-image: linear-gradient(to top, rgb(219, 220, 215) 0%, rgb(221, 220, 215) 24%, rgb(226, 201, 204) 30%, rgb(231, 98, 125) 46%, rgb(184, 35, 90) 59%, rgb(128, 19, 87) 71%, rgb(61, 22, 53) 84%, rgb(28, 26, 39) 100%);
+  color: rgb(255, 255, 255);
 }
 
-.App-link {
-  color: #61dafb;
+/* === Grid/Column Layout === */
+.col {
+  border: 2px solid rgb(12, 12, 12);
+  padding: 25px;
+  margin: 10px;
+  text-align: center;
+  font-size: larger;
+  margin-left: 70px;
+  margin-top: 25px;
+  font-weight: bold;
+  font-family: cursive;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* === Section === */
+section {
+  margin-bottom: 15px;
+  height: 691px;
+  padding-top: 47px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* === Images === */
+img {
+  border: 10px double rgb(12, 12, 12);
+}
+
+/* === Emotion Class === */
+.emotion {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 400px;
+  line-height: 2.0;
+  color: rgba(255, 255, 255, 0.725);
 }
