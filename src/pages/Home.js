@@ -1,9 +1,91 @@
 import React from "react";
-import './App.css';
+import "./App.css";
 
 export default function Home() {
   return (
     <>
+      {/* Carousel Section */}
+      <section>
+        <div className="container" style={{ width: 800, height: 600 }}>
+          <div id="myCarousel" className="carousel slide" data-ride="carousel">
+            {/* Indicators */}
+            <ol className="carousel-indicators">
+              {Array.from({ length: 21 }).map((_, i) => (
+                <li
+                  key={i}
+                  data-target="#myCarousel"
+                  data-slide-to={i}
+                  className={i === 0 ? "active" : ""}
+                />
+              ))}
+            </ol>
+
+            {/* Wrapper for slides */}
+            <div
+              className="carousel-inner"
+              style={{ width: "800px", height: "600px" }}
+            >
+              {[
+                "sc1.jpg",
+                "spiritual5.jpg",
+                "woman1.jpg",
+                "man2.jpg",
+                "family1.jpg",
+                "family2.jpg",
+                "family3.jpg",
+                "family4.jpg",
+                "family5.jpg",
+                "group1.jpg",
+                "group2.jpg",
+                "group3.jpg",
+                "group4.jpg",
+                "group5.jpg",
+                "sc3.jpg",
+                "spiritual1.jpg",
+                "man1.jpg",
+                "woman3.jpg",
+                "spiritual4.jpg",
+                "sc2.jpg",
+                "spiritual3.jpg",
+              ].map((img, index) => (
+                <div
+                  key={index}
+                  className={`item ${index === 0 ? "active" : ""}`}
+                >
+                  <img
+                    src={`/img/${img}`}
+                    alt=""
+                    style={{ width: "800px", height: "600px" }}
+                  />
+                  <div className="carousel-caption">
+                    <p className="h3 fs-1 fw-bold"></p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Left and right controls */}
+            <a
+              className="left carousel-control"
+              href="#myCarousel"
+              data-slide="prev"
+            >
+              <span className="glyphicon glyphicon-chevron-left" />
+              <span className="sr-only">Previous</span>
+            </a>
+            <a
+              className="right carousel-control"
+              href="#myCarousel"
+              data-slide="next"
+            >
+              <span className="glyphicon glyphicon-chevron-right" />
+              <span className="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Emotion Grid Section */}
       <header className="header2">
         <h1>CLICK ON YOUR EMOTION BELOW TO FIND ITS EFFECTS</h1>
       </header>
