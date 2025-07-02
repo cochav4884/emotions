@@ -2,7 +2,7 @@ import React from "react";
 import anger1 from "../images/anger1.jpg";
 import anger2 from "../images/anger2.jpg";
 import anger3 from "../images/anger3.jpg";
-import "./App.css"; // or your styles file
+import "../App.css"; // or your styles file
 
 const Anger = () => {
   return (

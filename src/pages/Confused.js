@@ -2,7 +2,7 @@ import React from "react";
 import confused1 from "../images/confused1.jpg";
 import confused2 from "../images/confused2.jpg";
 import confused3 from "../images/confused3.jpg";
-import "./App.css"; // your styles
+import "../App.css"; // your styles
 
 const Confused = () => {
   return (

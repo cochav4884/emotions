@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/emotions.css";
+import "../App.css";
 import upset1 from "../images/upset1.jpg";
 import upset2 from "../images/upset2.jpg";
 import upset3 from "../images/upset3.jpg";

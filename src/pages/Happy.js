@@ -1,8 +1,8 @@
 import React from "react";
-import happy1 from "../images/happy1.avif";
-import happy2 from "../images/happy2.avif";
-import happy3 from "../images/happy3.avif";
-import "./App.css"; // or your global styles
+import happy1 from "../images/happy1.jpg";
+import happy2 from "../images/happy2.jpg";
+import happy3 from "../images/happy3.jpg";
+import "../App.css"; // or your global styles
 
 const Happy = () => {
   return (

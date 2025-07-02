@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/emotions.css";
+import "../App.css";
 import undecided1 from "../images/undecided1.jpg";
 import undecided2 from "../images/undecided2.jpg";
 import undecided3 from "../images/undecided3.jpg";

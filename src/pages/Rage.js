@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/emotions.css"; // Ensure this file includes .emotion styles
+import "../App.css"; // Ensure this file includes .emotion styles
 import rage1 from "../images/rage1.jpg";
 import rage2 from "../images/rage2.jpg";
 import rage3 from "../images/rage3.jpg";

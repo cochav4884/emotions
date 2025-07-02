@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/emotions.css";  // Make sure your emotion styles are here
+import "../App.css";  // Make sure your emotion styles are here
 import sad1 from "../images/sad1.jpg";
 import sad2 from "../images/sad2.jpg";
 import sad3 from "../images/sad3.jpg";

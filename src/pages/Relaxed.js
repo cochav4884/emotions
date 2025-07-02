@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/emotions.css";
+import "../App.css";
 import relaxed1 from "../images/relaxed1.jpg";
 import relaxed2 from "../images/relaxed2.jpg";
 import relaxed3 from "../images/relaxed3.jpg";

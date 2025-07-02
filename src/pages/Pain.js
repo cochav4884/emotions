@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/emotions.css"; // Make sure this path matches your actual CSS structure
+import "../App.css"; // Make sure this path matches your actual CSS structure
 import pain1 from "../images/pain1.jpg";
 import pain2 from "../images/pain2.jpg";
 import pain3 from "../images/pain3.jpg";

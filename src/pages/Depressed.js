@@ -2,7 +2,7 @@ import React from "react";
 import depressed1 from "../images/depressed1.jpg";
 import depressed2 from "../images/depressed2.jpg";
 import depressed3 from "../images/depressed3.jpg";
-import "./App.css"; // or your styles file
+import "../App.css"; // or your styles file
 
 const Depressed = () => {
   return (

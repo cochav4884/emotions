@@ -2,7 +2,7 @@ import React from "react";
 import bothered1 from "../images/bothered1.jpg";
 import bothered2 from "../images/bothered2.jpg";
 import bothered3 from "../images/bothered3.jpg";
-import "./App.css"; // or your custom styles file
+import "../App.css"; // or your custom styles file
 
 const Bothered = () => {
   return (

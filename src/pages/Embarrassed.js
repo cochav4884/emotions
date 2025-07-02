@@ -2,7 +2,7 @@ import React from "react";
 import embarrassed1 from "../images/embarrassed1.jpg";
 import embarrassed2 from "../images/embarrassed2.jpg";
 import embarrassed3 from "../images/embarrassed3.jpg";
-import "./App.css"; // or your global CSS
+import "../App.css"; // or your global CSS
 
 const Embarrassed = () => {
   return (

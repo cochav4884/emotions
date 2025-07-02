@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "../App.css";
 
 export default function Home() {
   return (
@@ -53,7 +53,7 @@ export default function Home() {
                   className={`item ${index === 0 ? "active" : ""}`}
                 >
                   <img
-                    src={`/img/${img}`}
+                    src={`/src/Images${img}`}
                     alt=""
                     style={{ width: "800px", height: "600px" }}
                   />

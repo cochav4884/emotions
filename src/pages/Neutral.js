@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/e.css"; // Make sure this path matches your actual stylesheet
+import "../App.css"; // Make sure this path matches your actual stylesheet
 import neutral1 from "../images/neutral1.jpg";
 import neutral2 from "../images/neutral2.jpg";
 import neutral3 from "../images/neutral3.jpg";

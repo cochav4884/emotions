@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/emotions.css"; // Adjust path if needed
+import "../App.css"; // Adjust path if needed
 import lost1 from "../images/lost1.jpg";
 import lost2 from "../images/lost2.jpg";
 import lost3 from "../images/lost3.jpg";

@@ -2,7 +2,7 @@ import React from "react";
 import anxiety1 from "../images/anxiety1.jpg";
 import anxiety2 from "../images/anxiety2.jpg";
 import anxiety3 from "../images/anxiety3.jpg";
-import "./App.css"; // or wherever your styles are
+import "../App.css"; // or wherever your styles are
 
 const Anxiety = () => {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import awesome1 from "../images/awesome1.jpg";
 import awesome2 from "../images/awesome2.jpg";
 import awesome3 from "../images/awesome3.jpg";
-import "./App.css"; // or your styles
+import "../App.css"; // or your styles
 
 const Awesome = () => {
   return (
