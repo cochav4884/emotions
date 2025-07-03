@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/NavBarPractice.css";
 
-const NavBar = () => {
+const NavBarPractice = () => {
   const [isResponsive, setIsResponsive] = useState(false);
   const [dropdownOpen1, setDropdownOpen1] = useState(false);
   const [dropdownOpen2, setDropdownOpen2] = useState(false);
@@ -139,4 +139,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default NavBarPractice;

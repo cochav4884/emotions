@@ -1,160 +1,163 @@
-/* === Background === */
+/* === Reset and Base Styles === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: rgb(54, 17, 203);
-  background: linear-gradient(90deg, rgba(54, 17, 203, 1) 16%, rgba(14, 180, 223, 1) 68%, rgba(77, 208, 0, 1) 97%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* === Container === */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
 }
 
 /* === Headings === */
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 h1 {
-  text-align: center;
-  font-size: 48px;
-  box-shadow: 4px 8px 10px rgb(12, 12, 12);
-  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 h2 {
-  text-align: center;
-  font-size: 36px;
-  box-shadow: 4px 8px 10px rgb(12, 12, 12);
-  font-weight: bold;
+  font-size: 2rem;
 }
 
 h3 {
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 1.75rem;
 }
 
-/* === Header Styles === */
-header,
-.header2 {
-  border: 10px double rgb(12, 12, 12);
-  text-align: center;
-  box-shadow: 4px 8px 10px rgb(35, 21, 87);
-  margin-bottom: 15px;
-  color: rgb(226, 201, 204);
-  text-shadow: 2px 2px rgb(12, 12, 12);
+/* === Paragraphs === */
+p {
+  margin-bottom: 1em;
+  font-size: 1rem;
+  color: #444;
 }
 
-.header2 {
-  margin-top: 15px;
-}
-
-/* === Navbar === */
-.navbar {
-  border: 10px double rgb(12, 12, 12);
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  margin-bottom: 15px;
-  box-shadow: 4px 8px 10px rgb(35, 21, 87);
-  height: auto;
-}
-
-/* === Dropdown === */
-.dropdown {
-  border: 10px double rgb(12, 12, 12);
-  margin: 10px;
-  background-color: rgba(35, 21, 87, 0.5);
-  border-radius: 50px;
-  box-shadow: 4px 8px 10px rgb(0, 0, 255);
-  cursor: pointer;
-}
-
-.dropdown:hover {
-  background-color: rgb(255, 136, 0);
-}
-
-.dropdown-menu {
-  background: transparent;
-}
-
-.dropdown-menu:hover {
-  background: transparent;
-}
-
-/* === Box === */
-.box {
-  border: 2px solid rgb(12, 12, 12);
-  display: inline-block;
-  padding: 10px;
-  width: 150px;
-  height: 50px;
-  box-shadow: 4px 8px 10px rgb(35, 21, 87);
-  border-radius: 50px;
-  text-align: center;
-}
-
-/* === Color Boxes === */
-.red { background-color: rgb(173, 10, 4); color: rgb(12, 12, 12); margin-top: 10px; }
-.redorange { background-color: rgb(255, 0, 0); color: rgb(12, 12, 12); }
-.orange { background-color: rgb(255, 136, 0); color: rgb(12, 12, 12); }
-.orangeyellow { background-color: rgb(255, 176, 7); color: rgb(12, 12, 12); }
-.yellow { background-color: rgb(255, 255, 0); color: rgb(12, 12, 12); }
-.yellowgreen { background-color: rgb(173, 255, 47); color: rgb(12, 12, 12); margin-top: 10px; }
-.green { background-color: rgb(2, 109, 2); color: rgb(12, 12, 12); }
-.greenblue { background-color: rgb(65, 192, 181); color: rgb(12, 12, 12); }
-.blue { background-color: rgb(0, 0, 255); color: rgb(255, 255, 255); }
-.bluepurple { background-color: rgb(106, 17, 203); color: rgb(255, 255, 255); }
-.purple { background-color: rgb(39, 10, 39); color: rgb(255, 255, 255); margin-top: 10px; }
-.pink { background-color: rgb(255, 192, 203); color: rgb(12, 12, 12); }
-.white { background-color: rgb(255, 255, 255); color: rgb(12, 12, 12); }
-.grey { background-color: rgb(128, 128, 128); color: rgb(255, 255, 255); }
-.ash { background-color: rgba(12, 12, 12, 0.3); color: rgb(255, 255, 255); }
-.black { background-color: rgb(12, 12, 12); color: rgb(255, 255, 255); margin-top: 10px; }
-.brown { background-color: rgb(58, 53, 11); color: rgb(255, 255, 255); }
-
-/* === Rainbow Gradients === */
-.rainbow {
-  background-image: linear-gradient(to top, rgb(79, 181, 118) 0%, rgb(68, 196, 137) 30%, rgb(40, 169, 174) 46%, rgb(40, 162, 183) 59%, rgb(76, 119, 136) 71%, rgb(108, 79, 99) 86%, rgb(67, 44, 57) 100%);
-  color: rgb(255, 255, 255);
-}
-
-.rainbow2 {
-  background-image: linear-gradient(-225deg, rgb(35, 21, 87) 0%, rgb(68, 16, 122) 29%, rgb(255, 19, 97) 67%, rgb(255, 248, 0) 100%);
-  color: rgb(255, 255, 255);
-}
-
-.rainbow3 {
-  background-image: linear-gradient(to top, rgb(219, 220, 215) 0%, rgb(221, 220, 215) 24%, rgb(226, 201, 204) 30%, rgb(231, 98, 125) 46%, rgb(184, 35, 90) 59%, rgb(128, 19, 87) 71%, rgb(61, 22, 53) 84%, rgb(28, 26, 39) 100%);
-  color: rgb(255, 255, 255);
-}
-
-/* === Grid/Column Layout === */
-.col {
-  border: 2px solid rgb(12, 12, 12);
-  padding: 25px;
-  margin: 10px;
-  text-align: center;
-  font-size: larger;
-  margin-left: 70px;
-  margin-top: 25px;
-  font-weight: bold;
-  font-family: cursive;
+/* === Links === */
+a {
+  color: #007bff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-/* === Section === */
-section {
-  margin-bottom: 15px;
-  height: 691px;
-  padding-top: 47px;
-  margin-top: 15px;
-  text-align: center;
+a:hover,
+a:focus {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* === Buttons === */
+button,
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #007bff;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* === Forms === */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 3px #007bff;
+}
+
+/* === Lists === */
+ul,
+ol {
+  margin-left: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 /* === Images === */
 img {
-  border: 10px double rgb(12, 12, 12);
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* === Emotion Class === */
-.emotion {
-  font-weight: bold;
-  font-size: 20px;
-  text-align: left;
-  margin-left: 400px;
-  line-height: 2.0;
-  color: rgba(255, 255, 255, 0.725);
+/* === Layout Helpers === */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+
+/* === Utility Classes === */
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: block !important;
+}
+
+/* === Simple Header Style === */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
 }
