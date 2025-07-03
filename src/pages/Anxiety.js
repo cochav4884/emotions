@@ -10,12 +10,12 @@ const Anxiety = () => {
       <h1>Self-Care for working with Anxiety</h1>
 
       <div>
-        <img src={anxiety1} alt="Anxiety 1" width={600} height={550} />
-        <img src={anxiety2} alt="Anxiety 2" width={600} height={550} />
-        <img src={anxiety3} alt="Anxiety 3" width={600} height={550} />
+        <img src={anxiety1} alt="Anxiety 1" width="600" height="500" />
+        <img src={anxiety2} alt="Anxiety 2" width="600" height="500" />
+        <img src={anxiety3} alt="Anxiety 3" width="600" height="500" />
       </div>
 
-      <article>
+       <article className="text-start mx-auto" style={{ maxWidth: "900px" }}>
         <h2>Healthy ways to express anxiety</h2>
         <h3>
           Everyone has to work through anxiety in different ways. <br />

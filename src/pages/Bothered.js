@@ -10,12 +10,12 @@ const Bothered = () => {
       <h1>Self-Care for working with being bothered</h1>
 
       <div>
-        <img src={bothered1} alt="Bothered 1" width={600} height={550} />
-        <img src={bothered2} alt="Bothered 2" width={600} height={550} />
-        <img src={bothered3} alt="Bothered 3" width={600} height={550} />
+        <img src={bothered1} alt="Bothered 1" width="600" height="550" />
+        <img src={bothered2} alt="Bothered 2" width="600" height="550" />
+        <img src={bothered3} alt="Bothered 3" width="600" height="550" />
       </div>
 
-      <article>
+      <article className="text-start mx-auto" style={{ maxWidth: "900px" }}>
         <h2>Healthy ways to express being bothered</h2>
         <h3>
           Everyone has to work through their feeling of being bothered in different ways. <br />

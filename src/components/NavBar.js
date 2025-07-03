@@ -20,7 +20,7 @@ const NavBar = () => {
   return (
     <>
       <div className="navbar-header-text text-center p-2">
-        <h1>Select a song from the Emotion Music below</h1>
+        <h1>Select a song from the Emotion Music lists below</h1>
       </div>
 
       <div className={`topnav ${isResponsive ? "responsive" : ""}`} id="myTopnav">

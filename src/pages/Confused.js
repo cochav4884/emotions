@@ -10,12 +10,12 @@ const Confused = () => {
       <h1>Self-Care for working with being confused</h1>
 
       <div>
-        <img src={confused1} alt="Confused 1" width={600} height={550} />
-        <img src={confused2} alt="Confused 2" width={600} height={550} />
-        <img src={confused3} alt="Confused 3" width={600} height={550} />
+        <img src={confused1} alt="Confused 1" width="600" height="550" />
+        <img src={confused2} alt="Confused 2" width="600" height="550" />
+        <img src={confused3} alt="Confused 3" width="600" height="550" />
       </div>
 
-      <article>
+      <article className="text-start mx-auto" style={{ maxWidth: "900px" }}>
         <h2>Healthy ways to express being confused</h2>
         <h3>
           Everyone has to work through their feeling of being bothered in different ways. <br />

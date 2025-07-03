@@ -16,8 +16,8 @@ const Rage = () => {
       </div>
 
       <article className="text-start mx-auto" style={{ maxWidth: "900px" }}>
-        <h2 className="text-center">Healthy Ways to Express Rage</h2>
-        <h3 className="text-center">
+        <h2>Healthy Ways to Express Rage</h2>
+        <h3>
           Everyone has to work through rage in different ways. <br />
           Look through the suggestions and find what works best for you.
         </h3>

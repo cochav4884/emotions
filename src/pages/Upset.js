@@ -16,8 +16,8 @@ const Upset = () => {
       </div>
 
       <article className="text-start mx-auto" style={{ maxWidth: "900px" }}>
-        <h2 className="text-center">Healthy ways to express being upset</h2>
-        <h3 className="text-center">
+        <h2>Healthy ways to express being upset</h2>
+        <h3>
           Everyone has to work through feeling upset differently. <br />
           Look through the suggestions and find what works best for you
         </h3>

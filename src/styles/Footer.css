@@ -1,17 +1,14 @@
 /* Footer.css */
 
-footer.header2 {
-  border: 6px double #0c0c0c;
-  background-color: #251527;
-  color: #e2c9cc;
-  text-shadow: 2px 2px #0c0c0c;
-  box-shadow: 4px 8px 10px rgba(35, 21, 87, 0.7);
+footer {
+  background-color: #000000;
+  color: #ffffff;
   margin-top: 40px;
   padding: 1rem 0;
   font-weight: bold;
   font-size: 1.1rem;
-  border-radius: 10px;
-  max-width: 1000px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }

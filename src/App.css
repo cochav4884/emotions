@@ -10,7 +10,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background: #f0f2f5;
+  background: #f1c2e6;
   color: #333;
   min-height: 100vh;
 }
@@ -29,18 +29,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.75rem;
 }
 
 /* === Paragraphs === */
@@ -116,11 +104,14 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 /* === Layout Helpers === */
-.text-center {
-  text-align: center;
+.text-left {
+  text-align: left !important;
 }
 
 .mt-1 { margin-top: 0.25rem; }
@@ -153,12 +144,3 @@ header h1 {
   font-size: 2rem;
 }
 
-/* === Footer === */
-footer {
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 0.875rem;
-  color: #666;
-  border-top: 1px solid #ddd;
-  margin-top: 2rem;
-}

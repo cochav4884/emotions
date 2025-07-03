@@ -7,7 +7,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 export default function Home() {
   return (
     <div>
-      <h1>Enjoy these images for life</h1>
+      <h1>Enjoy these images of life</h1>
       {/* Carousel Section */}
       <div className="container mt-4" style={{ maxWidth: "800px" }}>
         <div
@@ -71,7 +71,8 @@ export default function Home() {
 
       {/* Emotion Grid Section */}
       <header className="header2 mt-5 text-center">
-        <h1>CLICK ON YOUR EMOTION BELOW TO FIND ITS EFFECTS</h1>
+        <h1>Click on an emotion to see how it effects you</h1>
+        <h2>Then go up and select the same emotion to see how to help yourself</h2>
       </header>
 
       <div className="container-fluid my-4">

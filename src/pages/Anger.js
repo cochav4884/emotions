@@ -15,13 +15,13 @@ const Anger = () => {
         <img src={anger3} alt="Anger 3" width="600" height="550" />
       </div>
 
-      <article>
+      <article className="text-start mx-auto" style={{ maxWidth: "900px" }}>
         <h2>Healthy ways to express anger</h2>
         <h3>
           Everyone has to work through anger in different ways. <br />
           Look through the suggestions and find what works best for you
         </h3>
-        <ul className="emotion">
+        <ul className="emotion mt-4">
           <li>If you feel out of control, walk away from the situation temporarily, until you cool down.</li>
           <li>Recognise and accept the emotion as a normal part of life.</li>
           <li>Talk to someone you trust about your anger.</li>

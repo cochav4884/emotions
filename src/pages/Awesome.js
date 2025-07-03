@@ -10,12 +10,12 @@ const Awesome = () => {
       <h1>Self-Care for working with feeling awesome</h1>
 
       <div>
-        <img src={awesome3} alt="Awesome 3" width={600} height={550} />
-        <img src={awesome2} alt="Awesome 2" width={600} height={550} />
-        <img src={awesome1} alt="Awesome 1" width={600} height={550} />
+        <img src={awesome3} alt="Awesome 3" width="600" height="550" />
+        <img src={awesome2} alt="Awesome 2" width="600" height="550" />
+        <img src={awesome1} alt="Awesome 1" width="600" height="550" />
       </div>
 
-      <article>
+     <article className="text-start mx-auto" style={{ maxWidth: "900px" }}>
         <h2>Healthy ways to express your awesome</h2>
         <h3>
           Everyone shares the feeling of awesome differently. <br />

@@ -10,12 +10,12 @@ const Embarrassed = () => {
       <h1>Self-Care for working with feeling embarrassed</h1>
 
       <div>
-        <img src={embarrassed1} alt="Embarrassed 1" width={600} height={550} />
-        <img src={embarrassed2} alt="Embarrassed 2" width={600} height={550} />
-        <img src={embarrassed3} alt="Embarrassed 3" width={600} height={550} />
+        <img src={embarrassed1} alt="Embarrassed 1"  width="600" height="550" />
+        <img src={embarrassed2} alt="Embarrassed 2"  width="600" height="550" />
+        <img src={embarrassed3} alt="Embarrassed 3"  width="600" height="550" />
       </div>
 
-      <article>
+      <article className="text-start mx-auto" style={{ maxWidth: "900px" }}>
         <h2>Healthy ways to express embarrassment</h2>
         <h3>
           Everyone has to work through embarrassment in different ways. <br />

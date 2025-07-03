@@ -10,12 +10,12 @@ const Depressed = () => {
       <h1>Self-Care for working with feeling depressed</h1>
 
       <div>
-        <img src={depressed2} alt="Depressed 2" width={600} height={550} />
-        <img src={depressed1} alt="Depressed 1" width={600} height={550} />
-        <img src={depressed3} alt="Depressed 3" width={600} height={550} />
+        <img src={depressed2} alt="Depressed 2"  width="600" height="550" />
+        <img src={depressed1} alt="Depressed 1"  width="600" height="550" />
+        <img src={depressed3} alt="Depressed 3"  width="600" height="550" />
       </div>
 
-      <article>
+      <article className="text-start mx-auto" style={{ maxWidth: "900px" }}>
         <h2>Healthy ways to express feeling depressed</h2>
         <h3>
           Everyone has to work through depression in different ways. <br />
