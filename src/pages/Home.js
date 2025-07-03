@@ -7,6 +7,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 export default function Home() {
   return (
     <div>
+      <h1>Enjoy these images for life</h1>
       {/* Carousel Section */}
       <div className="container mt-4" style={{ maxWidth: "800px" }}>
         <div

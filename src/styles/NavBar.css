@@ -1,172 +1,110 @@
-/* NavBar.css */
-body {
-    min-width: 320px; /* prevent viewport shrinking too much */
-}
-
-/* Header styling */
-.header2 {
-  border: 6px double #0c0c0c;
-  text-align: center;
-  box-shadow: 4px 8px 10px rgb(35, 21, 87);
-  margin: 20px auto;
-  padding: 1rem 0;
-  color: #e2c9cc;
-  text-shadow: 2px 2px #0c0c0c;
-  background-color: #251527;
-  font-weight: bold;
-  font-size: 1.8rem;
-  max-width: 1000px; /* keep centered and max-width */
-  border-radius: 10px;
-}
-
-/* Navbar container */
-.navbar {
-  border: 6px double #0c0c0c;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  margin: 0 0 20px 0; /* no auto centering */
-  box-shadow: 4px 8px 10px rgb(35, 21, 87);
-  background-color: #251527;
-  width: 100%;      /* full width */
-  min-width: 320px; /* prevent shrinking too small */
-  border-radius: 0; /* optional: remove rounded corners for full width */
-  padding: 0.5rem 1rem;
-}
-
-/* Navbar collapse must use full width */
-.navbar-collapse {
-  width: 100%;
-}
-
-/* Navbar toggler button */
-.navbar-toggler {
-  border: none;
-  background-color: transparent;
-  color: #e2c9cc;
-  font-size: 1.25rem;
-}
-
-/* Navbar brand button */
-.navbar-brand {
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #e2c9cc !important;
-  cursor: default;
-  padding: 0.3rem 0.75rem;
-}
-
-/* Nav items */
-.navbar-nav {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+/* Base styles */
+.topnav {
+  overflow: visible;
+  background-color: #333;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  align-items: center;
 }
 
-/* Dropdown items */
-.nav-item {
-  position: relative;
-}
-
-/* Dropdown toggle button */
-.nav-link.dropdown-toggle {
-  color: #e2c9cc;
-  background-color: transparent;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 0.4rem 0.8rem;
-  border-radius: 50px;
-  transition: background-color 0.3s ease;
-}
-
-.nav-link.dropdown-toggle:hover,
-.nav-link.dropdown-toggle:focus {
-  background-color: #ff8800;
-  color: #0c0c0c;
-  outline: none;
-}
-
-/* Dropdown menu */
-.dropdown-menu {
-  background-color: rgba(37, 21, 87, 0.9);
-  border: 3px double #0c0c0c;
-  border-radius: 15px;
-  margin-top: 0.3rem;
-  min-width: 180px;
-  max-height: 300px;
-  overflow-y: auto;
-  box-shadow: 4px 8px 15px rgba(0,0,0,0.7);
-  padding: 0.5rem 0;
-  z-index: 1050;
-}
-
-/* Dropdown menu items */
-.dropdown-item {
-  display: block;
-  padding: 0.3rem 1rem;
-  color: #e2c9cc;
+/* Links and buttons inside the nav */
+.topnav a,
+.dropbtn {
+  color: white;
+  padding: 14px 16px;
   text-decoration: none;
+  display: block;
+  background-color: inherit;
+  font-size: 16px;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.2s ease;
 }
 
-.dropdown-item:hover,
-.dropdown-item:focus {
-  background-color: #ff8800;
-  color: #0c0c0c;
-  outline: none;
+/* Explicit dropbtn override if needed */
+.dropbtn {
+  color: white; /* Ensure it matches nav */
 }
 
-/* Box inside dropdown items */
-.box {
-  border: 2px solid #0c0c0c;
+/* Dropdown container */
+.dropdown {
+  position: relative;
   display: inline-block;
-  padding: 10px;
-  width: 140px;
-  height: 50px;
-  box-shadow: 4px 8px 10px rgb(35, 21, 87);
-  border-radius: 50px;
-  text-align: center;
-  font-weight: 700;
-  -webkit-user-select: none;
-  user-select: none;
-  transition: transform 0.2s ease;
 }
 
-.box:hover {
-  transform: scale(1.05);
+/* Dropdown content hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  min-width: 160px;
+  z-index: 1;
+  top: 100%;
+  left: 0;
 }
 
-/* Scrollbar styling for dropdown menu (optional) */
-.dropdown-menu::-webkit-scrollbar {
-  width: 8px;
+/* Dropdown links */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-.dropdown-menu::-webkit-scrollbar-thumb {
-  background-color: #5533aa;
-  border-radius: 4px;
+/* Show dropdown on hover (desktop) */
+.dropdown:hover  {
+  display: block;
 }
 
-/* Also, override Bootstrap container-fluid to full width inside navbar if you use it */
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-  max-width: 100% !important;
-  width: 100% !important;
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  min-width: 160px;
+  z-index: 999; /* ensure it stays on top */
+  top: 100%;
+  left: 0;
+} 
+
+/* Hamburger icon - hidden by default on wide screens */
+.icon {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 14px 16px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .navbar-nav {
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .topnav {
     flex-direction: column;
-    gap: 0.25rem;
+    align-items: flex-start;
   }
-  .dropdown-menu {
-    min-width: 100%;
+
+  .topnav a,
+  .dropbtn {
+    display: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .topnav.responsive a,
+  .topnav.responsive .dropbtn {
+    display: block;
+  }
+
+  /* 👇 Mobile dropdown fix */
+  .topnav.responsive .dropdown-content {
+    position: relative;
+    display: block;
+  }
+
+  .icon {
+    display: block;
   }
 }
